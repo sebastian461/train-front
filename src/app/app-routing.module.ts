@@ -8,6 +8,11 @@ const routes: Routes = [
     loadChildren: () => import('./auth/auth.module').then((m) => m.AuthModule),
   },
   {
+    path: 'train',
+    loadChildren: () =>
+      import('./train/train.module').then((m) => m.TrainModule),
+  },
+  {
     path: '404',
     component: Error404PageComponent,
   },
